@@ -1,27 +1,28 @@
-function gerarnumeroaleatorio() {
-    const numeroaleatorio = (math.random() * 11)
-    return numeroaleatorio
-}
-
-function jogar() {
-    const numero = geraAleatorio()
-    const palpite = ''
-
-    do {
-        palpite = parseInt(prompt('Adivinhe o número'))
-        if (palpite != nuemro) {
-            tentativas--
-
-            alert(`Seu lixo, vc errou. Nem tentar de novo voce ainda tem $(tentativas > 1 ? "tentativas" = "tentativas").`)
-        }
-        else {
-            alert(`Parabens! o numero era : $(numero)`)
-            return
-        }
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8];
+let numerosPares = [];
+numeros.forEach(function(numero) {
+    if (numero % 2 === 0) {
+        numerosPares.push(numero);
     }
-    while (palpite != numero)
-    alert('Finalmente você acertou')
-}
+});
+console.log(numerosPares);
 
+//-----------------QUESTÃO  2-----------------------------
 
-jogar()
+let nomes = ["João", "Maria", "Carlos", "Ana"];
+let nomesComPrefixo = [];
+nomes.forEach(function(nome) {
+    nomesComPrefixo.unshift("Sr(a). " + nome);
+});
+console.log(nomesComPrefixo);
+
+//-----------------QUESTÃO  3------------------------------
+let numero = [4, 11, 8, 15, 23, 7, 2];
+let numerosMaior = [];
+numeros.forEach(function(numero) {
+    if (numero > 10) {
+        numerosMaior.push(numero);
+    }
+});
+console.log(numerosMaior);
+//-----------------QUESTÃO  4-----------------------------
